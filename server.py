@@ -3,10 +3,11 @@ import os
 import datetime
 import smtplib
 
+
 app = Flask(__name__)
 
-EMAIL = os.environ.get('EMAIL')
-PASSWORD = os.environ.get('PASSWORD')
+EMAIL = os.environ['EMAIL']
+PASSWORD = os.environ['PASSWORD']
 
 
 @app.route("/")
